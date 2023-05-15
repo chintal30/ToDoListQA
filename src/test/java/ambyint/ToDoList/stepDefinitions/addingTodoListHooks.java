@@ -2,6 +2,7 @@ package ambyint.ToDoList.stepDefinitions;
 
 import ambyint.ToDoList.pageObjects.BasePage;
 import ambyint.ToDoList.utilities.BrowserFactory;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -47,7 +48,7 @@ public class addingTodoListHooks {
 
     @Then("new list should be displayed")
     public void new_list_should_be_displayed() {
-        bp.getEditedText();
+        Assert.assertEquals(bp.getEditedText(), "Change Tires.All 4");
     }
     @When("user clicks on same list")
     public void user_clicks_on_same_list() {
@@ -91,5 +92,6 @@ public class addingTodoListHooks {
         System.out.println(bb);
         Assert.assertFalse(bb);
     }
+
 
 }

@@ -27,7 +27,7 @@ Feature: Adding Todo list
       | hi123!                 |
       | hi123!          hi123@ |
 
-  @low
+  @medium
   Scenario Outline: valid user input for checking max length : TC003
     Given user enters "<todoList>" as toDoList
     When user hits enter
@@ -37,7 +37,7 @@ Feature: Adding Todo list
       | todoList                                                                                                                                      |
       | aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa |
 
-  @low
+  @high
   Scenario Outline: Verify if duplicate inputs are allowed : TC004
     Given user enters "<todoList>" as toDoList
     When user hits enter
@@ -49,7 +49,7 @@ Feature: Adding Todo list
       | todoList    |
       | Buy Grocery |
 
-  @low
+  @high
   Scenario Outline: Verify when user tries to edit an existing ToDo list, it is edited and it shows new list : TC005
     Given user enters "Buy Grocery" as toDoList
     Then user hits enter
@@ -79,7 +79,7 @@ Feature: Adding Todo list
       | data  |
       | All 4 |
 
-  @low
+  @hgh
   Scenario Outline: Verify if user clicks on single list, it is crossed/completed : TC006
     Given user enters "<todoList>" as toDoList
     Then user hits enter
@@ -90,7 +90,7 @@ Feature: Adding Todo list
       | todoList    |
       | Buy Grocery |
 
-  @low
+  @hign
   Scenario Outline: Verify if user clicks on single list, it is crossed/completed : TC007
     Given user enters "<todoList>" as toDoList
     Then user hits enter

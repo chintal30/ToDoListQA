@@ -47,7 +47,7 @@ public class BasePage {
 
     @FindBy(xpath = "//*[text()='Change Tires.']/../../div")
     private WebElement dots;
-    @FindBy(xpath = "//*[contains(text(),'All 4')]/")
+    @FindBy(xpath = "//*[contains(text(),'All 4')]")
     private WebElement editedList;
 
     @FindBy(xpath = "(//*[text()='Change Tires.']/../../div/ul/li/i)[1]")
@@ -142,8 +142,8 @@ public class BasePage {
         editButton.click();
     }
 
-    public void getEditedText() {
-        Assert.assertEquals(editedList.getText(), "Change Tires.All 4");
+    public String getEditedText() {
+        return editedList.getText();
     }
 
     public void clickOnDotsForSingleDelete() {
