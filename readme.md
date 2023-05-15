@@ -13,4 +13,6 @@ QA Challenge
 5. For Test Scenarios and Test Cases: Sheet2 named: TestData. 
 6. Word file named : QA_Test_Plan
    for Test Plan. 
-   
+7. Branch named "second" in GitHub repository is for backup only
+  Master branch is the latest source code and final submission.
+ 
